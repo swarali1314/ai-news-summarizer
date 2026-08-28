@@ -1,0 +1,382 @@
+/* =========================================================
+   AI NEWS SUMMARIZER - PREMIUM DARK THEME
+   ========================================================= */
+
+/* ---------- Google Font ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+
+/* ---------- Global Page ---------- */
+
+html,
+body,
+[data-testid="stAppViewContainer"] {
+    font-family: 'Inter', sans-serif !important;
+}
+
+[data-testid="stAppViewContainer"] {
+    background:
+        radial-gradient(circle at top left, #1d1b3a 0%, transparent 35%),
+        radial-gradient(circle at top right, #24183d 0%, transparent 35%),
+        linear-gradient(135deg, #0b0b14 0%, #11101f 50%, #0b0b12 100%);
+    color: #ffffff;
+}
+
+
+/* ---------- Main Content Width ---------- */
+
+.block-container {
+    max-width: 900px !important;
+    padding-top: 55px !important;
+    padding-bottom: 60px !important;
+}
+
+
+/* ---------- Hide Streamlit Default Elements ---------- */
+
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+header {
+    background: transparent !important;
+}
+
+
+/* ---------- Page Animation ---------- */
+
+.block-container {
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+.hero-title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    margin-bottom: 12px;
+
+    background: linear-gradient(
+        90deg,
+        #a855f7,
+        #c084fc,
+        #8b5cf6
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+}
+
+.hero-subtitle {
+    text-align: center;
+    color: #a7a7b8;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 720px;
+    margin: 0 auto 45px auto;
+}
+
+
+/* ---------- Section Label ---------- */
+
+.section-label {
+    color: #f5f5f5;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   TEXTAREA
+   ========================================================= */
+
+/* Main textarea */
+
+.stTextArea textarea {
+    background: #1b1b27 !important;
+
+    /* IMPORTANT: makes typed text visible */
+    color: #ffffff !important;
+
+    border: 1px solid #3f3f52 !important;
+    border-radius: 14px !important;
+
+    padding: 18px !important;
+
+    font-family: 'Inter', sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+
+    caret-color: #c084fc !important;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.25) !important;
+
+    transition: all 0.2s ease !important;
+}
+
+
+/* Placeholder */
+
+.stTextArea textarea::placeholder {
+    color: #777789 !important;
+    opacity: 1 !important;
+}
+
+
+/* Textarea hover */
+
+.stTextArea textarea:hover {
+    border-color: #66667a !important;
+}
+
+
+/* Textarea focus */
+
+.stTextArea textarea:focus {
+    border-color: #a855f7 !important;
+
+    box-shadow:
+        0 0 0 1px #a855f7,
+        0 0 18px rgba(168, 85, 247, 0.25) !important;
+
+    outline: none !important;
+}
+
+
+/* =========================================================
+   CHARACTER / WORD COUNTER
+   ========================================================= */
+
+.char-counter {
+    color: #858596;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+/* All buttons */
+
+.stButton > button {
+    width: 100% !important;
+    height: 52px !important;
+
+    border-radius: 12px !important;
+
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+
+    transition: all 0.2s ease !important;
+}
+
+
+/* Analyze button */
+
+.stButton > button[kind="primary"] {
+    background: linear-gradient(
+        135deg,
+        #8b5cf6,
+        #a855f7
+    ) !important;
+
+    color: #ffffff !important;
+
+    border: none !important;
+
+    box-shadow:
+        0 6px 18px rgba(139, 92, 246, 0.25) !important;
+}
+
+
+/* Analyze hover */
+
+.stButton > button[kind="primary"]:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(139, 92, 246, 0.4) !important;
+}
+
+
+/* Analyze click */
+
+.stButton > button[kind="primary"]:active {
+    transform: translateY(0);
+}
+
+
+/* Clear button */
+
+.stButton > button[kind="secondary"] {
+    background: transparent !important;
+
+    color: #b8b8c8 !important;
+
+    border: 1px solid #444454 !important;
+}
+
+
+/* Clear hover */
+
+.stButton > button[kind="secondary"]:hover {
+    background: #242433 !important;
+
+    color: #ffffff !important;
+
+    border-color: #66667a !important;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   RESULT CARDS
+   ========================================================= */
+
+.result-card {
+    background: rgba(25, 25, 38, 0.85);
+
+    border: 1px solid #303044;
+
+    border-radius: 16px;
+
+    padding: 24px;
+
+    margin-top: 22px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25);
+
+    backdrop-filter: blur(10px);
+
+    animation: resultFade 0.4s ease;
+}
+
+
+@keyframes resultFade {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Result headings */
+
+.result-title {
+    color: #c084fc;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+
+/* Result text */
+
+.result-text {
+    color: #ddddE8;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SENTIMENT
+   ========================================================= */
+
+.sentiment-positive {
+    color: #4ade80;
+    font-weight: 700;
+}
+
+.sentiment-negative {
+    color: #f87171;
+    font-weight: 700;
+}
+
+.sentiment-neutral {
+    color: #facc15;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   SUCCESS / WARNING / ERROR MESSAGES
+   ========================================================= */
+
+[data-testid="stAlert"] {
+    border-radius: 12px !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+
+/* =========================================================
+   DIVIDER
+   ========================================================= */
+
+hr {
+    border-color: #292938 !important;
+    margin: 30px 0 !important;
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .block-container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        padding-top: 35px !important;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .stTextArea textarea {
+        font-size: 15px !important;
+    }
+}
