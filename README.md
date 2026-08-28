@@ -16,8 +16,17 @@ The application allows users to paste a news article and instantly receive an AI
 - 🗑️ Clear button to reset the input
 - 🎨 Modern dark-themed Streamlit interface
 - 📱 Simple and user-friendly UI
+  
+### 🖥️ Application Interface
+
+The main interface allows users to enter an article and start the AI analysis.
+
 <img width="1880" height="902" alt="image" src="https://github.com/user-attachments/assets/226045af-79dc-485e-bff1-eb8fdbda3ee2" />
-<img width="1880" height="902" alt="Screenshot 2026-08-28 120020" src="https://github.com/user-attachments/assets/226e94d0-a3b1-407b-a78a-81435120af6e" />
+### 🤖 AI Analysis Result
+
+After processing the article, the application displays an AI-generated summary, sentiment classification, and confidence score.
+
+<img width="1802" height="590" alt="image" src="https://github.com/user-attachments/assets/0abd466f-2805-41e7-bd5e-456c786e175f" />
 
 
 
