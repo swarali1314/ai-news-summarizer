@@ -1,21 +1,29 @@
 # 📰 AI News Summarizer & Sentiment Analyzer
 
-An AI-powered web application that summarizes news articles and analyzes their sentiment using Natural Language Processing (NLP).
+An AI-powered web application that uses **Natural Language Processing (NLP)** to summarize news articles and analyze their sentiment.
 
-The application allows users to enter a news article and receive an AI-generated summary along with sentiment classification and prediction confidence through an interactive Streamlit interface.
+Users can paste a news article and receive an **AI-generated summary, sentiment classification, and confidence score** through an interactive Streamlit interface.
+
+## 🌐 Live Demo
+
+👉 https://ai-news-summarizer-jsh8gz27q3aplyy9lwskca.streamlit.app/
+
+## 💻 GitHub Repository
+
+👉 https://github.com/swarali1314/ai-news-summarizer
 
 ## 🚀 Features
 
-- 📝 Enter news articles directly through the application
-- ✨ Basic text preprocessing for cleaner input
-- 🤖 AI-powered text summarization using a pretrained Transformer model
+- 📝 Accepts news articles directly from the user
+- ✨ Text preprocessing before analysis
+- 🤖 AI-powered text summarization
 - 📊 Sentiment analysis
-- 📈 Sentiment prediction confidence score
+- 📈 Sentiment confidence score
 - 🔢 Character and word counter
 - ⚠️ Input validation for short articles
 - 🗑️ Clear button to reset the input
-- 🎨 Modern dark-themed user interface
-- 📱 Responsive and user-friendly Streamlit interface
+- 🎨 Modern dark-themed Streamlit interface
+- 📱 Simple and user-friendly interface
 
 ## 📸 Application Preview
 
@@ -29,11 +37,11 @@ The main interface allows users to enter a news article and start the AI analysi
 
 After processing the article, the application displays an AI-generated summary, sentiment classification, and confidence score.
 
-<img width="1802" height="590" alt="AI News Summarizer Result" src="https://github.com/user-attachments/assets/0abd466f-2805-41e7-bd5e-456c786e175f" />
+<img width="1802" height="590" alt="AI News Summarizer Results" src="https://github.com/user-attachments/assets/0abd466f-2805-41e7-bd5e-456c786e175f" />
 
 ## 🧠 How It Works
 
-The application follows a simple NLP pipeline:
+The application follows this NLP pipeline:
 
 ```text
 User enters a news article
@@ -44,22 +52,22 @@ Text summarization using FLAN-T5
           ↓
 Sentiment analysis
           ↓
-Display summary + sentiment + confidence
+Summary + Sentiment + Confidence Score
 ```
 
-### 1. Text Input
+### 1. 📝 Text Input
 
 The user enters a news article through the Streamlit interface.
 
-### 2. Text Preprocessing
+### 2. 🧹 Text Preprocessing
 
-Basic preprocessing is applied to clean and prepare the article before sending it to the NLP models.
+Basic preprocessing is applied to clean and prepare the article before it is passed to the NLP models.
 
-### 3. Text Summarization
+### 3. 🤖 Text Summarization
 
 The application uses the pretrained **Google FLAN-T5-small** Transformer model to generate a concise summary of the article.
 
-### 4. Sentiment Analysis
+### 4. 📊 Sentiment Analysis
 
 The application analyzes the article and classifies its overall sentiment as:
 
@@ -67,9 +75,9 @@ The application analyzes the article and classifies its overall sentiment as:
 - 🔴 Negative
 - 🟡 Neutral
 
-The model's prediction confidence is also displayed.
+A confidence score is also displayed with the prediction.
 
-### 5. Results
+### 5. 📄 Results
 
 The application displays:
 
@@ -80,18 +88,19 @@ The application displays:
 
 ## 🛠️ Technologies Used
 
-- **Python** – Application development
-- **Streamlit** – Interactive web interface
-- **Hugging Face Transformers** – Pretrained NLP models
-- **PyTorch** – Model execution
-- **Natural Language Processing (NLP)** – Text processing and analysis
-- **FLAN-T5** – Text summarization
-- **Sentiment Analysis** – Text classification
+- **Python**
+- **Streamlit**
+- **Hugging Face Transformers**
+- **PyTorch**
+- **Natural Language Processing (NLP)**
+- **FLAN-T5**
+- **Sentiment Analysis**
+- **CSS**
 
 ## 📂 Project Structure
 
 ```text
-AI News Summarizer/
+AI-News-Summarizer/
 │
 ├── app.py
 ├── style.css
@@ -100,7 +109,7 @@ AI News Summarizer/
 └── .gitignore
 ```
 
-## ⚙️ Installation
+## ⚙️ Installation & Setup
 
 ### Prerequisites
 
@@ -115,39 +124,39 @@ Make sure the following are installed on your system:
 git clone https://github.com/swarali1314/ai-news-summarizer.git
 ```
 
-Move into the project directory:
+### 2. Navigate to the Project Directory
 
 ```bash
 cd ai-news-summarizer
 ```
 
-### 2. Create a Virtual Environment
+### 3. Create a Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-### 3. Activate the Virtual Environment
+### 4. Activate the Virtual Environment
 
-For Windows:
+**Windows:**
 
 ```bash
 venv\Scripts\activate
 ```
 
-For macOS/Linux:
+**macOS/Linux:**
 
 ```bash
 source venv/bin/activate
 ```
 
-### 4. Install Dependencies
+### 5. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 5. Run the Application
+### 6. Run the Application
 
 ```bash
 streamlit run app.py
@@ -183,7 +192,13 @@ The technology company reported strong financial results driven by increased cus
 
 > Note: The exact generated summary and confidence score may vary depending on the input article and model prediction.
 
-## 🎯 Learning Outcomes
+## 🎯 Project Objective
+
+The objective of this project is to demonstrate the practical application of **NLP and Transformer-based models** for automated news analysis.
+
+The project combines text preprocessing, AI-based summarization, and sentiment analysis into a single interactive web application.
+
+## 🎓 Learning Outcomes
 
 Through this project, I practiced:
 
@@ -203,12 +218,13 @@ Through this project, I practiced:
 - 📰 Integrate a News API
 - 🌍 Support multiple languages
 - 📊 Add sentiment visualization
-- ☁️ Deploy the application online
-- 💾 Store previous analysis results
-- 🤖 Experiment with improved summarization models
+- 💾 Allow users to download analysis results
+- ⚡ Improve model inference speed
+- 🔍 Add keyword and topic extraction
+- ☁️ Further optimize deployment
 
 ## 👨‍💻 Author
 
 **Swarali Gurav**
 
-AI/NLP portfolio project demonstrating practical implementation of text summarization, sentiment analysis, preprocessing, and Streamlit application development.
+AI/NLP portfolio project demonstrating practical implementation of text summarization, sentiment analysis, text preprocessing, and Streamlit application development.
